@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Plus, Search, Filter, MoreHorizontal, Instagram, Youtube, UserPlus, Mail, Phone, DollarSign } from "lucide-react";
+import { Plus, Search, Filter, MoreHorizontal, Camera, PlayCircle, UserPlus, Mail, Phone, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -44,8 +44,8 @@ const influencers = mockData.influencers.map((i, idx) => ({
 }));
 
 const platformIcons: Record<string, any> = {
-  Instagram: Instagram,
-  YouTube: Youtube,
+  Instagram: Camera,
+  YouTube: PlayCircle,
   TikTok: () => (
     <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
       <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.89-.6-4.13-1.47-.13-.08-.26-.17-.38-.26v5.48c.01 3.82-2.06 7.46-5.51 9.12-3.45 1.66-7.67.98-10.45-1.7-2.78-2.68-3.41-7.01-1.55-10.37 1.86-3.36 5.86-5.02 9.49-4.13.06-1.7.02-3.4.03-5.11-.01-.01-.02-.01-.03-.02zm-1.01 9.07c-2.43-.37-4.83 1.16-5.53 3.48-.7 2.32.18 4.93 2.11 6.13 1.93 1.2 4.62.8 6.12-.94 1.5-1.74 1.52-4.38.05-6.14-.85-.98-2.09-1.49-3.36-1.53h-.01z"/>
